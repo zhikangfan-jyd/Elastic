@@ -16,16 +16,20 @@ export default {
 
 <style>
   @import url('./assets/style/init.css');
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    background-image: url('./assets/image/bg.jpg');
+  }
   .app{
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
   }
-  html,body{
-    width: 100%;
-    height: 100%;
-  }
+
   a:hover{
     text-decoration: none;
   }

@@ -8,23 +8,23 @@
           <span class="glyphicon glyphicon-search search-icon"></span>
       </div>
       <div class="nav-wrapper">
-        <router-link :to="{path:'/find'}" class="router">
+        <router-link :to="{name:'find'}" class="router">
             <span class="icon glyphicon glyphicon-list"></span>
             <span class="text">发现</span>
         </router-link>
-        <router-link :to="{path:'/share'}" class="router">
+        <router-link :to="{name:'share'}" class="router">
             <span class="icon glyphicon glyphicon-share-alt"></span>
             <span class="text">分享</span>
         </router-link>
-        <router-link :to="{path:'/article'}" class="router">
+        <router-link :to="{name:'article'}" class="router">
             <span class="icon glyphicon glyphicon-list-alt"></span>
             <span class="text">文章</span>
         </router-link>
-        <router-link :to="{path:'/activity'}" class="router">
+        <router-link :to="{name:'activity'}" class="router">
             <span class="icon glyphicon glyphicon-calendar"></span>
             <span class="text">活动</span>
         </router-link>
-        <router-link :to="{path:'/download'}" class="router">
+        <router-link :to="{name:'download'}" class="router">
             <span class="icon glyphicon glyphicon-save"></span>
             <span class="texdt">下载</span>
         </router-link>
@@ -40,7 +40,16 @@ export default {
 </script>
 
 <style scoped>
+a{
+    text-decoration: none;
+}
 a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+a:link{
     text-decoration: none;
 }
 .container{
@@ -107,8 +116,8 @@ a:hover{
     line-height: 18px;
     vertical-align: text-bottom;
 }
-.nav-wrapper .router:hover{
-    background-color: rgb(77,171,255);
+.nav-wrapper .router.active,.nav-wrapper .router:hover{
+    background-color: rgb(43, 145, 235);
 }
 .login-btn{
     position: absolute;

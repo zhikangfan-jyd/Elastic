@@ -3,31 +3,31 @@
       <nav class="navbar">
           <ul class="nav-box">
               <li>
-                  <router-link :to="{path:'/all'}">全部</router-link>
+                  <router-link :to="{name:'all'}">全部</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/elasticsearch'}">Elasticsearch</router-link>
+                  <router-link :to="{name:'elasticsearch'}">Elasticsearch</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/logstash'}">Logstash</router-link>
+                  <router-link :to="{name:'logstash'}">Logstash</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/kibana'}">Kibana</router-link>
+                  <router-link :to="{name:'kibana'}">Kibana</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/beats'}">Beats</router-link>
+                  <router-link :to="{name:'beats'}">Beats</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/job'}">求职招聘</router-link>
+                  <router-link :to="{name:'job'}">求职招聘</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/dynamic'}">资讯动态</router-link>
+                  <router-link :to="{name:'dynamic'}">资讯动态</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/activityII'}">活动</router-link>
+                  <router-link :to="{name:'activityII'}">活动</router-link>
               </li>
               <li>
-                  <router-link :to="{path:'/daily'}">Elastic日报</router-link>
+                  <router-link :to="{name:'daily'}">Elastic日报</router-link>
               </li>
           </ul>
       </nav>
@@ -46,24 +46,32 @@ export default {
 }
 .navbar{
     min-height: 30px;
+    margin-bottom: 0px;
 }
     .nav-box li{
         float: left;
         margin: 0px 10px 10px 0px;
+        /* height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px; */
+
+    }
+    .nav-box li a{
+        display: inline-block;
         height: 30px;
         line-height: 30px;
         text-align: center;
         border-radius: 5px;
-
-    }
-    .nav-box li a{
-        color: #fff;
+        color: rgb(58, 54, 54);
         padding: 0px 10px;
     }
-    .nav-box li a:hover{
+    .nav-box li a.active,.nav-box li a:hover{
         text-decoration: none;
+        color: #fff;
+         background-color: #494a4b;
     }
-    .nav-box li:hover{
+    /* .nav-box li:hover{
         background-color: #494a4b;
-    }
+    } */
 </style>

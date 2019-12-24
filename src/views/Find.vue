@@ -4,7 +4,7 @@
       <Classify />
     </div>
     <div class="content">
-      <router-view></router-view>
+      <router-view class="main-content"></router-view>
     </div>
   </div>
 </template>
@@ -19,7 +19,10 @@ export default {
 </script>
 
 <style scoped>
-.container{
+/* .container{
   background-color: red;
+} */
+.main-content{
+  background-color: #fff;
 }
 </style>
